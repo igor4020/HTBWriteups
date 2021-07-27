@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Feb 14 08:55:45 2020 as: nmap --script ldap-search --script-args ldap.maxobjects=300 -sV -oA nmap/nmap-ldap-search-3268 -p 3268 10.10.10.169
+Host: 10.10.10.169 ()	Status: Up
+Host: 10.10.10.169 ()	Ports: 3268/open/tcp//ldap//Microsoft Windows Active Directory LDAP (Domain: megabank.local, Site: Default-First-Site-Name)/
+# Nmap done at Fri Feb 14 08:55:56 2020 -- 1 IP address (1 host up) scanned in 10.60 seconds

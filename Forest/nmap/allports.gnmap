@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Fri Mar  6 13:34:39 2020 as: nmap -T5 -v -p- --max-retries 1337 -oA nmap/allports 10.10.10.161
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.161 (htb.local)	Status: Up
+Host: 10.10.10.161 (htb.local)	Status: Timeout
+# Nmap done at Fri Mar  6 13:49:39 2020 -- 1 IP address (1 host up) scanned in 900.05 seconds

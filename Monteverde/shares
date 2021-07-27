@@ -1,0 +1,8 @@
+ADMIN$ - (DISK) Remote Admin
+[+] 10.10.10.172:445      - azure_uploads - (DISK) 
+[+] 10.10.10.172:445      - C$ - (DISK) Default share
+[+] 10.10.10.172:445      - E$ - (DISK) Default share
+[+] 10.10.10.172:445      - IPC$ - (IPC) Remote IPC
+[+] 10.10.10.172:445      - NETLOGON - (DISK) Logon server share 
+[+] 10.10.10.172:445      - SYSVOL - (DISK) Logon server share 
+[+] 10.10.10.172:445      - users$ - (DISK)

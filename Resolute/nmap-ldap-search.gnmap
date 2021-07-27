@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Feb 14 08:54:30 2020 as: nmap --script ldap-search --script-args ldap.maxobjects=300 -Pn -oA nmap-ldap-search -p 3268 10.10.10.169
+Host: 10.10.10.169 ()	Status: Up
+Host: 10.10.10.169 ()	Ports: 3268/open/tcp//globalcatLDAP///
+# Nmap done at Fri Feb 14 08:54:30 2020 -- 1 IP address (1 host up) scanned in 0.35 seconds

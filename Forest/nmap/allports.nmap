@@ -1,0 +1,7 @@
+# Nmap 7.80 scan initiated Fri Mar  6 13:34:39 2020 as: nmap -T5 -v -p- --max-retries 1337 -oA nmap/allports 10.10.10.161
+Increasing send delay for 10.10.10.161 from 0 to 5 due to 59 out of 147 dropped probes since last increase.
+Nmap scan report for htb.local (10.10.10.161)
+Host is up (0.16s latency).
+Skipping host htb.local (10.10.10.161) due to host timeout
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Mar  6 13:49:39 2020 -- 1 IP address (1 host up) scanned in 900.05 seconds

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Feb 11 17:31:23 2020 as: nmap -p 3152 -sC -sV -oA nmap/mango-full 4346 4531 10565 13851 18264 18385 19170 25448 25450 27959 299918 30182 41406 50410 50662 58462 59695 63326 10.10.10.162 -->
+<nmaprun scanner="nmap" args="nmap -p 3152 -sC -sV -oA nmap/mango-full 4346 4531 10565 13851 18264 18385 19170 25448 25450 27959 299918 30182 41406 50410 50662 58462 59695 63326 10.10.10.162" start="1581460283" startstr="Tue Feb 11 17:31:23 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="3152"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1581460284" endtime="1581460290"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.162" addrtype="ipv4"/>
+<hostnames>
+<hostname name="staging-order.mango.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="3152"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="feitianrockey" method="table" conf="3"/></port>
+</ports>
+<times srtt="182631" rttvar="78651" to="497235"/>
+</host>
+<runstats><finished time="1581460290" timestr="Tue Feb 11 17:31:30 2020" elapsed="6.69" summary="Nmap done at Tue Feb 11 17:31:30 2020; 19 IP addresses (1 host up) scanned in 6.69 seconds" exit="success"/><hosts up="1" down="18" total="19"/>
+</runstats>
+</nmaprun>

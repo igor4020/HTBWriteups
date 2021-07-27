@@ -1,0 +1,59 @@
+Guest
+Users
+Guests
+Remote Desktop Users
+Network Configuration Operators
+Performance Monitor Users
+Performance Log Users
+Distributed COM Users
+IIS_IUSRS
+Cryptographic Operators
+Event Log Readers
+Certificate Service DCOM Access
+RDS Remote Access Servers
+RDS Endpoint Servers
+RDS Management Servers
+Hyper-V Administrators
+Access Control Assistance Operators
+Remote Management Users
+Storage Replica Administrators
+MONTEVERDE$
+Domain Computers
+Cert Publishers
+Domain Users
+Domain Guests
+Group Policy Creator Owners
+RAS and IAS Servers
+Pre-Windows 2000 Compatible Access
+Incoming Forest Trust Builders
+Windows Authorization Access Group
+Terminal Server License Servers
+Allowed RODC Password Replication Group
+Denied RODC Password Replication Group
+Enterprise Read-only Domain Controllers
+Cloneable Domain Controllers
+Protected Users
+DnsAdmins
+DnsUpdateProxy
+SQLServer2005SQLBrowserUser$MONTEVERDE
+AAD_987d7f2f57d2
+ADSyncAdmins
+ADSyncOperators
+ADSyncBrowse
+ADSyncPasswordSet
+mhope
+Azure Admins
+SABatchJobs
+svc-ata
+svc-bexec
+svc-netapp
+File Server Admins
+Call Recording Admins
+Reception
+Operations
+Trading
+HelpDesk
+Developers
+dgalanos
+roleary
+smorgan

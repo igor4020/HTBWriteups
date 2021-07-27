@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 26 13:31:37 2020 as: nmap -Pn -p- -sC -sV -oA nmap/full 10.10.10.170 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -sC -sV -oA nmap/full 10.10.10.170" start="1582741897" startstr="Wed Feb 26 13:31:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="Connect Scan" time="1582742562" percent="13.77" remaining="4163" etc="1582746725"/>
+<taskprogress task="Connect Scan" time="1582743352" percent="14.75" remaining="8412" etc="1582751763"/>
+<taskprogress task="Connect Scan" time="1582745576" percent="16.69" remaining="18367" etc="1582763943"/>
+<taskprogress task="Connect Scan" time="1582746921" percent="17.84" remaining="23134" etc="1582770054"/>

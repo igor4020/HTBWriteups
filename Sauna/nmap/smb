@@ -1,0 +1,40 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-07-08 21:15 EDT
+NSE: Loaded 62 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 21:15
+Completed NSE at 21:15, 0.00s elapsed
+Initiating NSE at 21:15
+Completed NSE at 21:15, 0.00s elapsed
+Initiating SYN Stealth Scan at 21:15
+Scanning 10.10.10.175 [1 port]
+Discovered open port 445/tcp on 10.10.10.175
+Completed SYN Stealth Scan at 21:15, 0.46s elapsed (1 total ports)
+Initiating Service scan at 21:15
+Scanning 1 service on 10.10.10.175
+Completed Service scan at 21:15, 29.27s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.10.175.
+Initiating NSE at 21:15
+Completed NSE at 21:15, 13.04s elapsed
+Initiating NSE at 21:15
+Completed NSE at 21:16, 9.28s elapsed
+Nmap scan report for 10.10.10.175
+Host is up (0.40s latency).
+
+PORT    STATE SERVICE       VERSION
+445/tcp open  microsoft-ds?
+
+Host script results:
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+NSE: Script Post-scanning.
+Initiating NSE at 21:16
+Completed NSE at 21:16, 0.00s elapsed
+Initiating NSE at 21:16
+Completed NSE at 21:16, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 53.55 seconds
+           Raw packets sent: 1 (44B) | Rcvd: 1 (44B)

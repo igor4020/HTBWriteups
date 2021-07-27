@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Feb 11 17:31:23 2020 as: nmap -p 3152 -sC -sV -oA nmap/mango-full 4346 4531 10565 13851 18264 18385 19170 25448 25450 27959 299918 30182 41406 50410 50662 58462 59695 63326 10.10.10.162
+Host: 10.10.10.162 (staging-order.mango.htb)	Status: Up
+Host: 10.10.10.162 (staging-order.mango.htb)	Ports: 3152/closed/tcp//feitianrockey///
+# Nmap done at Tue Feb 11 17:31:30 2020 -- 19 IP addresses (1 host up) scanned in 6.69 seconds

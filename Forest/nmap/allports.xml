@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Mar  6 13:34:39 2020 as: nmap -T5 -v -p- -&#45;max-retries 1337 -oA nmap/allports 10.10.10.161 -->
+<nmaprun scanner="nmap" args="nmap -T5 -v -p- -&#45;max-retries 1337 -oA nmap/allports 10.10.10.161" start="1583519679" startstr="Fri Mar  6 13:34:39 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1583519679"/>
+<taskend task="Ping Scan" time="1583519679" extrainfo="1 total hosts"/>
+<taskbegin task="Connect Scan" time="1583519679"/>
+<taskprogress task="Connect Scan" time="1583519710" percent="1.05" remaining="2932" etc="1583522642"/>
+<taskprogress task="Connect Scan" time="1583519740" percent="1.63" remaining="3684" etc="1583523424"/>
+<taskprogress task="Connect Scan" time="1583519800" percent="3.36" remaining="3477" etc="1583523277"/>
+<taskprogress task="Connect Scan" time="1583519830" percent="4.43" remaining="3256" etc="1583523086"/>
+<taskprogress task="Connect Scan" time="1583519875" percent="5.40" remaining="3433" etc="1583523308"/>
+<taskprogress task="Connect Scan" time="1583519911" percent="5.98" remaining="3648" etc="1583523558"/>
+<taskprogress task="Connect Scan" time="1583519974" percent="7.96" remaining="3409" etc="1583523383"/>
+<taskprogress task="Connect Scan" time="1583520136" percent="12.48" remaining="3206" etc="1583523341"/>
+<taskprogress task="Connect Scan" time="1583520181" percent="14.25" remaining="3022" etc="1583523202"/>
+<taskend task="Connect Scan" time="1583520579" extrainfo="1 host timed out"/>
+<host starttime="1583519679" endtime="1583520579"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.10.161" addrtype="ipv4"/>
+<hostnames>
+<hostname name="htb.local" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1583520579" timestr="Fri Mar  6 13:49:39 2020" elapsed="900.05" summary="Nmap done at Fri Mar  6 13:49:39 2020; 1 IP address (1 host up) scanned in 900.05 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

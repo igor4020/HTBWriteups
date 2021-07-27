@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Jul  8 19:25:33 2020 as: nmap -Pn -oA nmap/full -p- 10.10.10.175 -->
+<nmaprun scanner="nmap" args="nmap -Pn -oA nmap/full -p- 10.10.10.175" start="1594250733" startstr="Wed Jul  8 19:25:33 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1594250733" endtime="1594252447"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65515">
+<extrareasons reason="no-responses" count="65515"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldapssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="globalcatLDAP" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="globalcatLDAPssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="wsman" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="adws" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49673"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49674"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49675"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49686"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="53999"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<times srtt="281350" rttvar="104310" to="698590"/>
+</host>
+<runstats><finished time="1594252447" timestr="Wed Jul  8 19:54:07 2020" elapsed="1713.74" summary="Nmap done at Wed Jul  8 19:54:07 2020; 1 IP address (1 host up) scanned in 1713.74 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
