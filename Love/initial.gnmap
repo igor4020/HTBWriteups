@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Thu Jun 17 14:23:23 2021 as: nmap -sC -sV -oA initial 10.10.10.239
+Host: 10.10.10.239 ()	Status: Up
+Host: 10.10.10.239 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.46 ((Win64) OpenSSL|1.1.1j PHP|7.3.27)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 443/open/tcp//ssl|http//Apache httpd 2.4.46 (OpenSSL|1.1.1j PHP|7.3.27)/, 445/open/tcp//microsoft-ds//Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)/, 3306/open/tcp//mysql?///, 5000/open/tcp//http//Apache httpd 2.4.46 (OpenSSL|1.1.1j PHP|7.3.27)/	Ignored State: closed (993)
+# Nmap done at Thu Jun 17 14:24:27 2021 -- 1 IP address (1 host up) scanned in 63.88 seconds
